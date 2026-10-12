@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans TC', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
     padding: 0 20px;
 }
 
-/* 導覽列 */
+/* 導覽列與頁籤 */
 .navbar {
     background-color: #ffffff;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
@@ -44,6 +45,23 @@ body {
     color: #666;
 }
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color: #008751;
+}
+
 .btn-primary {
     background-color: #008751;
     color: #fff;
@@ -58,10 +76,10 @@ body {
     background-color: #006b40;
 }
 
-/* Hero Section (影片背景) */
+/* Hero 區塊與影片背景 */
 .hero {
     position: relative;
-    height: 420px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,7 +107,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 135, 81, 0.75); /* TKB 品牌綠半透明遮罩 */
+    background: rgba(0, 100, 60, 0.75);
     z-index: 2;
 }
 
@@ -103,7 +121,6 @@ body {
     font-weight: 900;
     margin-bottom: 12px;
     letter-spacing: 2px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .hero p {
@@ -120,17 +137,15 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 1.1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    transition: transform 0.2s, background 0.2s;
     display: inline-block;
+    transition: transform 0.2s;
 }
 
 .btn-hero:hover {
     transform: translateY(-2px);
-    background-color: #ffa800;
 }
 
-/* 標題與線條 */
+/* 標題與標籤 */
 .section-title {
     text-align: center;
     margin: 50px 0 30px 0;
@@ -141,6 +156,12 @@ body {
     color: #008751;
 }
 
+.section-sub {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 5px;
+}
+
 .section-title .line {
     width: 60px;
     height: 4px;
@@ -149,79 +170,51 @@ body {
     border-radius: 2px;
 }
 
-/* 薪資亮點卡片 */
-.salary-highlight-card {
-    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
-    border: 2px solid #008751;
-    border-radius: 16px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(0,135,81,0.08);
-    margin-bottom: 30px;
-}
-
-.salary-badge {
-    display: inline-block;
-    background-color: #008751;
-    color: white;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-}
-
-.salary-highlight-card h3 {
-    font-size: 1.8rem;
-    color: #222;
-    margin-bottom: 12px;
-}
-
-.highlight-price {
-    color: #d32f2f;
-    font-size: 2.2rem;
-    font-weight: 900;
-}
-
-.salary-desc {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-
-/* 品牌矩陣圖表 */
+/* 品牌矩陣與品牌卡片 */
 .brand-matrix-box {
     background: white;
     border-radius: 16px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-
-.brand-matrix-box h3 {
-    font-size: 1.4rem;
-    color: #008751;
-    margin-bottom: 6px;
-}
-
-.brand-sub {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.brand-img-wrapper {
-    max-width: 800px;
-    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .brand-img {
     width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 12px;
 }
 
-/* 工作據點卡片與地圖 */
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.brand-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.brand-card h3 {
+    font-size: 1.1rem;
+    color: #008751;
+    margin-bottom: 8px;
+}
+
+.brand-card p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* 徵才據點 */
 .location-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -303,20 +296,11 @@ body {
     text-decoration: none;
     font-weight: 700;
     font-size: 0.9rem;
-    transition: background 0.2s;
-}
-
-.btn-map:hover {
-    background-color: #c8e6c9;
 }
 
 .btn-map-urgent {
     background-color: #ffb800;
     color: #222;
-}
-
-.btn-map-urgent:hover {
-    background-color: #ffa800;
 }
 
 /* 職缺卡片網格 */
@@ -345,18 +329,12 @@ body {
     margin-bottom: 12px;
 }
 
-.job-header h3 {
-    font-size: 1.2rem;
-    color: #222;
-}
-
 .tag {
     background-color: #e8f5e9;
     color: #2e7d32;
     font-size: 0.8rem;
     padding: 4px 10px;
     border-radius: 12px;
-    font-weight: 500;
 }
 
 .badge-req {
@@ -395,8 +373,44 @@ body {
     margin-top: 15px;
 }
 
-.btn-apply:hover {
-    background-color: #006b40;
+/* 薪資福利 (最下方) */
+.salary-highlight-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+    border: 2px solid #008751;
+    border-radius: 16px;
+    padding: 35px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,135,81,0.08);
+    margin-bottom: 60px;
+}
+
+.salary-badge {
+    display: inline-block;
+    background-color: #008751;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.salary-highlight-card h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.highlight-price {
+    color: #d32f2f;
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+.salary-desc {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.8;
 }
 
 .footer {
