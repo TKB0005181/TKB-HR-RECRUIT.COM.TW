@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKB 招募專區 - 加入我們，共創未來</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">TKB 招募中心</div>
+            <nav>
+                <a href="#about">關於我們</a>
+                <a href="#benefits">團隊福利</a>
+                <a href="#jobs">開放職缺</a>
+                <a href="#apply" class="btn-nav">立即應徵</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主視覺 Banner -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>與我們一起打造改變未來的產品</h1>
+            <p>我們正在尋找熱情、有想法的夥伴。如果你渴望舞台、喜歡挑戰，這裡就是你的下一站！</p>
+            <a href="#jobs" class="btn-primary">查看所有職缺</a>
+        </div>
+    </section>
+
+    <!-- 關於我們 -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>關於我們</h2>
+            <p class="section-desc">我們致力於提供最優質的服務與數位體驗，重視團隊合作、自主創新與每位夥伴的成長。</p>
+        </div>
+    </section>
+
+    <!-- 團隊福利 -->
+    <section id="benefits" class="section bg-light">
+        <div class="container">
+            <h2>我們提供的好福利</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>🚀 彈性工作</h3>
+                    <p>提供彈性上下班時間與遠端協作空間，讓生活與工作完美平衡。</p>
+                </div>
+                <div class="card">
+                    <h3>📚 學習補助</h3>
+                    <p>每年提供進修與購書津貼，鼓勵夥伴不斷成長、解鎖新技能。</p>
+                </div>
+                <div class="card">
+                    <h3>☕ 零食咖啡</h3>
+                    <p>辦公室隨時供應無限量的咖啡、茶飲與各色零食下午茶。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 開放職缺 -->
+    <section id="jobs" class="section">
+        <div class="container">
+            <h2>目前開放職缺</h2>
+            <div class="job-list">
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>前端開發工程師 (Frontend Engineer)</h3>
+                        <p class="tag">全職 · 台北市 / 遠端協作</p>
+                        <p>負責網頁產品開發、優化使用者介面與體驗，與團隊協作打造高效能網頁。</p>
+                    </div>
+                    <a href="#apply" class="btn-outline">應徵此職位</a>
+                </div>
+                <div class="job-card">
+                    <div class="job-info">
+                        <h3>數位行銷專員 (Digital Marketer)</h3>
+                        <p class="tag">全職 · 台北市</p>
+                        <p>規劃並執行數位行銷專案、社群媒體經營與成效數據分析。</p>
+                    </div>
+                    <a href="#apply" class="btn-outline">應徵此職位</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 應徵區塊 -->
+    <section id="apply" class="section bg-light">
+        <div class="container text-center">
+            <h2>加入我們</h2>
+            <p class="section-desc">準備好迎接新挑戰了嗎？請填寫下方表單將履歷投遞給我們！</p>
+            <!-- 這裡可以替換成你的 Google 表單連結 -->
+            <a href="https://forms.gle/你的Google表單連結" target="_blank" class="btn-primary btn-large">填寫應徵表單 (Google Form)</a>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+        <p>&copy; 2026 TKB-HR-RECRUIT.COM.TW All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
