@@ -16,14 +16,19 @@
                 <span class="brand-title">臺灣知識庫</span>
                 <span class="brand-subtitle">TKB 傳動知識 創造價值</span>
             </div>
-            <a href="#jobs" class="btn-primary">熱門職缺</a>
+            <nav class="nav-menu">
+                <a href="#brands" class="nav-link">品牌介紹</a>
+                <a href="#locations" class="nav-link">徵才據點</a>
+                <a href="#jobs" class="nav-link">熱門職缺</a>
+                <a href="#salary" class="btn-primary">薪資福利</a>
+            </nav>
         </div>
     </header>
 
-    <!-- 主視覺 Banner + 教育影片 -->
+    <!-- 主視覺 Banner (嵌入教育影片) -->
     <section class="hero">
         <video autoplay loop muted playsinline class="hero-video">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-teacher-helping-a-student-in-a-classroom-41528-large.mp4" type="video/mp4">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
@@ -33,70 +38,108 @@
         </div>
     </section>
 
-    <!-- 薪資福利與品牌優勢區 -->
-    <section class="salary-section container">
+    <!-- 品牌介紹區塊 -->
+    <section id="brands" class="brands-section container">
         <div class="section-title">
-            <h2>具競爭力的薪資與多元獎金</h2>
+            <h2>品牌介紹</h2>
+            <p class="section-sub">全台教育產業領導品牌｜從幼兒、K-12、大學到職涯發展的完整學習鏈</p>
             <div class="line"></div>
         </div>
-        
-        <div class="salary-highlight-card">
-            <div class="salary-badge">底薪 34,800 元起 + 高額業績獎金</div>
-            <h3>平均月薪高達 <span class="highlight-price">60,000 ~ 70,000</span> 元！</h3>
-            <p class="salary-desc">
-                TKB 擁有全台最豐富的教育產品與品牌，獎金根據不同產品線獨立累加！<br>
-                創辦人與主管不定期加碼特別發放獎金，優秀同仁單月領取高達 <strong>100,000 元</strong> 以上！
-            </p>
-        </div>
 
-        <!-- 品牌矩陣圖展示 -->
+        <!-- 品牌矩陣圖片 -->
         <div class="brand-matrix-box">
-            <h3>TKB 旗下多元品牌矩陣</h3>
-            <p class="brand-sub">產品涵蓋研究所、公職、美語、學習顧問與留遊學，學習需求終身覆蓋！</p>
             <div class="brand-img-wrapper">
                 <img src="brand-matrix.jpg" alt="TKB 臺灣知識庫 旗下品牌矩陣" class="brand-img">
             </div>
         </div>
+
+        <!-- 11 大品牌特色介紹卡片 -->
+        <div class="brand-grid">
+            <div class="brand-card">
+                <h3>🎓 大碩研究所</h3>
+                <p>研究所輔導冠軍品牌，專業師資與頂尖榜單，協助萬名學子考取頂尖國立大學研究所。</p>
+            </div>
+            <div class="brand-card">
+                <h3>✈️ 放洋留遊學</h3>
+                <p>提供一站式海外留學與遊學諮詢服務，打造個人化申請策略，實現邁向世界的夢想。</p>
+            </div>
+            <div class="brand-card">
+                <h3>🗣️ 洋碩美語</h3>
+                <p>5人小班教學與口說聽力專家，翻轉傳統填鴨式英語，全面提升職場與學術英語實力。</p>
+            </div>
+            <div class="brand-card">
+                <h3>🏛️ 百官網公職</h3>
+                <p>公職考試權威，涵蓋高普考、外交特考、國營事業與技師考試，輔導考取鐵飯碗首選。</p>
+            </div>
+            <div class="brand-card">
+                <h3>🔄 龍門轉學考</h3>
+                <p>大學轉學考領先品牌，完整跨考與翻轉學歷方案，助大一大二學生重新翻轉理想校系。</p>
+            </div>
+            <div class="brand-card">
+                <h3>🩺 龍門學士後醫</h3>
+                <p>針對後醫學系專業輔導，精準掌握考題趨勢與面試實戰，協助優秀人才順利跨入醫界。</p>
+            </div>
+            <div class="brand-card">
+                <h3>📝 甄戰學習顧問</h3>
+                <p>應對大書審時代！專注於高中升大學備審資料輔導與模擬面試，打造個人獨特亮點。</p>
+            </div>
+            <div class="brand-card">
+                <h3>💻 甄戰一點通 (高中)</h3>
+                <p>專為高中生的影音數位教材，隨時隨地自主學習，精準掌握素養導向命題重點。</p>
+            </div>
+            <div class="brand-card">
+                <h3>📘 甄戰一點通 (國中)</h3>
+                <p>國會會考制霸首選教材，結合名師講解與素養題庫，助國中生高分考取第一志願。</p>
+            </div>
+            <div class="brand-card">
+                <h3>🎒 甄戰一點通 (私中)</h3>
+                <p>私中制霸優質教材，針對考私中與資優班特別設計，扎實奠定國小跨考國中的基石。</p>
+            </div>
+            <div class="brand-card">
+                <h3>🤖 千碩國小營隊</h3>
+                <p>K-12 創新科技教育，包含 STEAM、機器人與程式設計營隊，培養孩子未來競爭力。</p>
+            </div>
+        </div>
     </section>
 
-    <!-- 工作據點區 (含有 Google Map 導航連結) -->
-    <section class="locations-section container">
+    <!-- 工作據點區 (已更新據點名稱與地址) -->
+    <section id="locations" class="locations-section container">
         <div class="section-title">
-            <h2>主要工作據點</h2>
+            <h2>徵才據點</h2>
             <div class="line"></div>
         </div>
 
         <div class="location-grid">
             
-            <!-- 據點 1：中科大碩 -->
-            <div class="location-card">
-                <div class="location-img-box">
-                    <iframe src="https://maps.google.com/maps?q=434臺中市龍井區新東里臺灣大道五段43之1號1樓&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map-iframe"></iframe>
-                </div>
-                <div class="location-info">
-                    <h3>中科大碩</h3>
-                    <p class="address">📍 434 臺中市龍井區新東里臺灣大道五段43之1號1樓</p>
-                    <a href="https://maps.google.com/?q=434臺中市龍井區新東里臺灣大道五段43之1號1樓" target="_blank" class="btn-map">開啟 Google 地圖導航</a>
-                </div>
-            </div>
-
-            <!-- 據點 2：東海大碩 (重點招募) -->
+            <!-- 據點 1：東海大碩 (重點急徵據點) -->
             <div class="location-card highlight-card">
                 <div class="urgent-badge">🔥 熱門急徵據點</div>
                 <div class="location-img-box">
-                    <iframe src="https://maps.google.com/maps?q=407臺中市西屯區逢甲里河南路二段317號&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map-iframe"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=434臺中市龍井區新東里臺灣大道五段43之1號1樓&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" class="map-iframe"></iframe>
                 </div>
                 <div class="location-info">
                     <h3>東海大碩 <span class="hot-tag">重點擴招中</span></h3>
+                    <p class="address">📍 434 臺中市龍井區新東里臺灣大道五段43之1號1樓</p>
+                    <a href="https://maps.google.com/?q=434臺中市龍井區新東里臺灣大道五段43之1號1樓" target="_blank" class="btn-map btn-map-urgent">開啟 Google 地圖導航</a>
+                </div>
+            </div>
+
+            <!-- 據點 2：西屯大碩 -->
+            <div class="location-card">
+                <div class="location-img-box">
+                    <iframe src="https://maps.google.com/maps?q=407臺中市西屯區逢甲里河南路二段317號&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" class="map-iframe"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>西屯大碩</h3>
                     <p class="address">📍 407 臺中市西屯區逢甲里河南路二段317號</p>
-                    <a href="https://maps.google.com/?q=407臺中市西屯區逢甲里河南路二段317號" target="_blank" class="btn-map btn-map-urgent">開啟 Google 地圖導航</a>
+                    <a href="https://maps.google.com/?q=407臺中市西屯區逢甲里河南路二段317號" target="_blank" class="btn-map">開啟 Google 地圖導航</a>
                 </div>
             </div>
 
             <!-- 據點 3：台中大碩 -->
             <div class="location-card">
                 <div class="location-img-box">
-                    <iframe src="https://maps.google.com/maps?q=100臺中市中區綠川里綠川西街73號&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" class="map-iframe"></iframe>
+                    <iframe src="https://maps.google.com/maps?q=100臺中市中區綠川里綠川西街73號&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" class="map-iframe"></iframe>
                 </div>
                 <div class="location-info">
                     <h3>台中大碩</h3>
@@ -123,7 +166,7 @@
                     <span class="tag">輪班</span>
                 </div>
                 <div class="job-salary">34,800元 ~ 50,000元 <small>+ 業績獎金</small></div>
-                <p class="job-location">📍 東海大碩 / 中科大碩 / 台中大碩</p>
+                <p class="job-location">📍 東海大碩 / 西屯大碩 / 台中大碩</p>
                 <a href="https://www.104.com.tw/" target="_blank" class="btn-apply">立即應徵</a>
             </div>
 
@@ -133,7 +176,7 @@
                     <span class="tag">輪班</span>
                 </div>
                 <div class="job-salary">34,800元 ~ 50,000元 <small>+ 業績獎金</small></div>
-                <p class="job-location">📍 東海大碩 / 中科大碩 / 台中大碩</p>
+                <p class="job-location">📍 東海大碩 / 西屯大碩 / 台中大碩</p>
                 <a href="https://www.104.com.tw/" target="_blank" class="btn-apply">立即應徵</a>
             </div>
 
@@ -179,6 +222,23 @@
                 <a href="https://www.104.com.tw/" target="_blank" class="btn-apply">立即應徵</a>
             </div>
 
+        </div>
+    </section>
+
+    <!-- 薪資福利區塊 -->
+    <section id="salary" class="salary-section container">
+        <div class="section-title">
+            <h2>薪資結構與福利亮點</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="salary-highlight-card">
+            <div class="salary-badge">薪資亮點</div>
+            <h3>平均月薪高達 <span class="highlight-price">60,000 ~ 70,000</span> 元！</h3>
+            <p class="salary-desc">
+                TKB 擁有全台最豐富的教育產品與品牌，獎金根據不同產品線獨立累加！<br>
+                創辦人與主管不定期加碼特別發放獎金，優秀同仁單月領取高達 <strong>100,000 元</strong> 以上！
+            </p>
         </div>
     </section>
 
